@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="Add integration tests">
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TaxiCompany.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/service/RepairOrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/service/RepairOrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/service/integration/RepairOrderServiceIntegrationTest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="986806f4-6d37-4403-9e2f-2efc304b4b1a" value="" />
+    </colors>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "semenchukkristina416-sketch"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/semenchukkristina416-sketch/Lab.3.git",
+    "accountId": "e69cad4a-c18f-41e6-9963-016cd7021ece"
+  }
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0177268997456579" />
+      <entry key="MS500" value="1.772768143635116" />
+      <entry key="S2" value="2.5763979523317064" />
+      <entry key="S5" value="2.818338865881966" />
+      <entry key="S10" value="2.907000565383469" />
+      <entry key="S30" value="2.968505284851267" />
+      <entry key="S60" value="2.9841899532362124" />
+      <entry key="M2" value="2.9920792416682866" />
+      <entry key="M5" value="2.996827912230896" />
+      <entry key="M10" value="2.99841332470413" />
+      <entry key="M15" value="2.9989420761059797" />
+      <entry key="M30" value="2.9994710523454797" />
+      <entry key="H1" value="3.0007312485482367" />
+      <entry key="H2" value="3.1088876043232694" />
+      <entry key="H4" value="4.142964035910852" />
+      <entry key="D1" value="11.108756672958307" />
+      <entry key="W1" value="14.346506854377376" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="1.7370043280397362E-247" />
+      <entry key="M2" value="9.110738874655951E-124" />
+      <entry key="M5" value="1.5879187943174633E-49" />
+      <entry key="M10" value="8.902351349136897E-25" />
+      <entry key="M15" value="1.5821186314173427E-16" />
+      <entry key="M30" value="2.8122949252781737E-8" />
+      <entry key="H1" value="3.7497691399317396E-4" />
+      <entry key="H2" value="0.043299665690581954" />
+      <entry key="H4" value="0.46529307929777214" />
+      <entry key="D1" value="3.3658596898133415" />
+      <entry key="W1" value="4.725160599418656" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.928811847464212" />
+      <entry key="MS500" value="1.7250529815774172" />
+      <entry key="S2" value="2.5560138821732146" />
+      <entry key="S5" value="2.8091444024792778" />
+      <entry key="S10" value="2.90221158783026" />
+      <entry key="S30" value="2.9668645192247243" />
+      <entry key="S60" value="2.983363897511027" />
+      <entry key="M2" value="2.9916647865942485" />
+      <entry key="M5" value="2.996661786514799" />
+      <entry key="M10" value="2.998330204468445" />
+      <entry key="M15" value="2.9988866498577766" />
+      <entry key="M30" value="2.99944336090006" />
+      <entry key="H1" value="3.0010919503549953" />
+      <entry key="H2" value="3.1521566790225597" />
+      <entry key="H4" value="4.608127065603394" />
+      <entry key="D1" value="14.474463669693483" />
+      <entry key="W1" value="19.07163688096228" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3KuNpc6j4C2r1q01PI8SLK7QR6a" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CarServiceDemo.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "JUnit.All in lab1.executor": "Run",
+    "JUnit.CarTest.executor": "Run",
+    "JUnit.DiscountRuleTest.executor": "Run",
+    "JUnit.DomainEntitiesTest.executor": "Run",
+    "JUnit.InMemoryRepairOrderRepositoryTest.executor": "Run",
+    "JUnit.JobTest.executor": "Run",
+    "JUnit.MechanicTest.executor": "Run",
+    "JUnit.MinimumPriceRuleTest.executor": "Run",
+    "JUnit.PriceCalculatorTest.executor": "Run",
+    "JUnit.PricingTest.executor": "Run",
+    "JUnit.RepairOrderAndJobTest.executor": "Run",
+    "JUnit.RepairOrderIT.executor": "Run",
+    "JUnit.RepairOrderServiceIntegrationTest.executor": "Run",
+    "JUnit.RepairOrderServiceTest.executor": "Run",
+    "JUnit.RepairOrderTest.executor": "Run",
+    "JUnit.ServicePostTest.executor": "Run",
+    "JUnit.TimeIntervalTest.executor": "Run",
+    "JUnit.integration in lab1.executor": "Run",
+    "JUnit.java in lab1.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CarServiceDemo.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/java/lab1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java\lab1\src\main\resources\db" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RepairOrderIT">
+    <configuration name="RepairOrderIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.domain.integration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carservice.domain.integration" />
+      <option name="MAIN_CLASS_NAME" value="carservice.domain.integration.RepairOrderIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="integration in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/carservice/domain/integration" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarServiceDemo" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="lab1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="carservice.domain.CarServiceDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RepairOrderIT" />
+        <item itemvalue="JUnit.java in lab1" />
+        <item itemvalue="JUnit.integration in lab1" />
+        <item itemvalue="Spring Boot.CarServiceDemo" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="" />
+      <created>1792403676941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1792403676941</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add integration tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add integration tests" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
