@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="Add integration tests">
+    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="Configure Docker PostgreSQL, Flyway migrations, and integration tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaxiCompany.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/service/RepairOrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/service/RepairOrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/service/integration/RepairOrderServiceIntegrationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/IntegrationTestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/IntegrationTestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/RepairOrderIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/RepairOrderIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/IntegrationTestConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/IntegrationTestConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/RepairOrderIT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/RepairOrderIT.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/service/RepairOrderServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/service/RepairOrderServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,37 +36,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "semenchukkristina416-sketch"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;semenchukkristina416-sketch&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/semenchukkristina416-sketch/Lab.3.git",
-    "accountId": "e69cad4a-c18f-41e6-9963-016cd7021ece"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/semenchukkristina416-sketch/Lab.3.git&quot;,
+    &quot;accountId&quot;: &quot;e69cad4a-c18f-41e6-9963-016cd7021ece&quot;
   }
-}]]></component>
+}</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0177268997456579" />
-      <entry key="MS500" value="1.772768143635116" />
-      <entry key="S2" value="2.5763979523317064" />
-      <entry key="S5" value="2.818338865881966" />
-      <entry key="S10" value="2.907000565383469" />
-      <entry key="S30" value="2.968505284851267" />
-      <entry key="S60" value="2.9841899532362124" />
-      <entry key="M2" value="2.9920792416682866" />
-      <entry key="M5" value="2.996827912230896" />
-      <entry key="M10" value="2.99841332470413" />
-      <entry key="M15" value="2.9989420761059797" />
-      <entry key="M30" value="2.9994710523454797" />
-      <entry key="H1" value="3.0007312485482367" />
-      <entry key="H2" value="3.1088876043232694" />
-      <entry key="H4" value="4.142964035910852" />
-      <entry key="D1" value="11.108756672958307" />
-      <entry key="W1" value="14.346506854377376" />
+      <entry key="MS100" value="1.0001687639297048" />
+      <entry key="MS500" value="1.4104797743788717" />
+      <entry key="S2" value="3.210299583749458" />
+      <entry key="S5" value="4.148778528123289" />
+      <entry key="S10" value="4.547765517213675" />
+      <entry key="S30" value="4.842900516645167" />
+      <entry key="S60" value="4.920626810404279" />
+      <entry key="M2" value="4.960105291390226" />
+      <entry key="M5" value="4.983991878075495" />
+      <entry key="M10" value="4.99198754157063" />
+      <entry key="M15" value="4.994656493132425" />
+      <entry key="M30" value="4.997327396596223" />
+      <entry key="H1" value="4.99965893234231" />
+      <entry key="H2" value="5.108336625847206" />
+      <entry key="H4" value="6.142617858635209" />
+      <entry key="D1" value="13.108619621252322" />
+      <entry key="W1" value="16.3464820062633" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -71,36 +75,36 @@
       <entry key="S5" value="0.0" />
       <entry key="S10" value="0.0" />
       <entry key="S30" value="0.0" />
-      <entry key="S60" value="1.7370043280397362E-247" />
-      <entry key="M2" value="9.110738874655951E-124" />
-      <entry key="M5" value="1.5879187943174633E-49" />
-      <entry key="M10" value="8.902351349136897E-25" />
-      <entry key="M15" value="1.5821186314173427E-16" />
-      <entry key="M30" value="2.8122949252781737E-8" />
-      <entry key="H1" value="3.7497691399317396E-4" />
-      <entry key="H2" value="0.043299665690581954" />
-      <entry key="H4" value="0.46529307929777214" />
-      <entry key="D1" value="3.3658596898133415" />
-      <entry key="W1" value="4.725160599418656" />
+      <entry key="S60" value="1.7087421168739066E-247" />
+      <entry key="M2" value="9.036316027250258E-124" />
+      <entry key="M5" value="1.5827175339218986E-49" />
+      <entry key="M10" value="8.887759473638135E-25" />
+      <entry key="M15" value="1.5803893212959746E-16" />
+      <entry key="M30" value="2.8107575374819818E-8" />
+      <entry key="H1" value="3.748744062984696E-4" />
+      <entry key="H2" value="0.04329374685647574" />
+      <entry key="H4" value="0.4652612766657694" />
+      <entry key="D1" value="3.36582134615051" />
+      <entry key="W1" value="4.725152909562014" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.928811847464212" />
-      <entry key="MS500" value="1.7250529815774172" />
-      <entry key="S2" value="2.5560138821732146" />
-      <entry key="S5" value="2.8091444024792778" />
-      <entry key="S10" value="2.90221158783026" />
-      <entry key="S30" value="2.9668645192247243" />
-      <entry key="S60" value="2.983363897511027" />
-      <entry key="M2" value="2.9916647865942485" />
-      <entry key="M5" value="2.996661786514799" />
-      <entry key="M10" value="2.998330204468445" />
-      <entry key="M15" value="2.9988866498577766" />
-      <entry key="M30" value="2.99944336090006" />
-      <entry key="H1" value="3.0010919503549953" />
-      <entry key="H2" value="3.1521566790225597" />
-      <entry key="H4" value="4.608127065603394" />
-      <entry key="D1" value="14.474463669693483" />
-      <entry key="W1" value="19.07163688096228" />
+      <entry key="MS100" value="0.9139339360839112" />
+      <entry key="MS500" value="1.3627229261236167" />
+      <entry key="S2" value="3.1693675778591714" />
+      <entry key="S5" value="4.126690498752695" />
+      <entry key="S10" value="4.535525151642458" />
+      <entry key="S30" value="4.838527338804546" />
+      <entry key="S60" value="4.918401757345953" />
+      <entry key="M2" value="4.958983006147448" />
+      <entry key="M5" value="4.983540603396495" />
+      <entry key="M10" value="4.991761509250345" />
+      <entry key="M15" value="4.9945057170302" />
+      <entry key="M30" value="4.997251992615936" />
+      <entry key="H1" value="4.999995666091517" />
+      <entry key="H2" value="5.151587849763658" />
+      <entry key="H4" value="6.607743126168324" />
+      <entry key="D1" value="16.474287281279324" />
+      <entry key="W1" value="21.07160420092801" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -133,6 +137,7 @@
     "JUnit.RepairOrderTest.executor": "Run",
     "JUnit.ServicePostTest.executor": "Run",
     "JUnit.TimeIntervalTest.executor": "Run",
+    "JUnit.domain in lab1.executor": "Run",
     "JUnit.integration in lab1.executor": "Run",
     "JUnit.java in lab1.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -167,18 +172,11 @@
       <recent name="C:\java\lab1\src\main\resources\db" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RepairOrderIT">
-    <configuration name="RepairOrderIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.CarServiceDemo">
+    <configuration name="domain in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="carservice.domain.integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="carservice.domain.integration" />
-      <option name="MAIN_CLASS_NAME" value="carservice.domain.integration.RepairOrderIT" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/carservice/domain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -214,7 +212,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -227,11 +227,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RepairOrderIT" />
-        <item itemvalue="JUnit.java in lab1" />
-        <item itemvalue="JUnit.integration in lab1" />
         <item itemvalue="Spring Boot.CarServiceDemo" />
+        <item itemvalue="JUnit.java in lab1" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="JUnit.integration in lab1" />
+        <item itemvalue="JUnit.domain in lab1" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +258,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add integration tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add integration tests" />
+    <MESSAGE value="Configure Docker PostgreSQL, Flyway migrations, and integration tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configure Docker PostgreSQL, Flyway migrations, and integration tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

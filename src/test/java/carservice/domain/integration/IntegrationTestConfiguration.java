@@ -11,7 +11,7 @@ public class IntegrationTestConfiguration {
     @Bean
     @ServiceConnection
     public PostgreSQLContainer<?> postgresContainer() {
-        return new PostgreSQLContainer<>("postgres:15-alpine")
+        return new PostgreSQLContainer<>("postgres:18-alpine")
                 .withDatabaseName("repair_test_db")
                 .withUsername("postgres")
                 .withPassword("postgres");
