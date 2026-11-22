@@ -1,5 +1,8 @@
 package carservice.domain;
 
+import carservice.domain.enumeration.JobStatus;
+import carservice.domain.enumeration.MechanicSpecialization;
+import carservice.exception.DomainException;
 import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.*;

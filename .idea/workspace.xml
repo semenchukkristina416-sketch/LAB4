@@ -4,11 +4,99 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="Configure Docker Postgres">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab1.iml" afterDir="false" />
+    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="+++">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/CarServiceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/CarServiceDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/CarServiceRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/CarServiceRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/DomainException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/JobCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/JobCost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/JobStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/JobStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Mechanic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/MechanicSpecialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/MechanicSpecialization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/OrderPriority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/OrderPriority.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/RepairOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/RepairOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/ServicePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/ServicePost.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/TaxiCompany.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/TimeInterval.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/DiscountRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/DiscountRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/MinimumPriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/MinimumPriceRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/PriceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/PriceCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/PricingRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/PricingRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/InMemoryRepairOrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/MechanicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/MechanicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/RepairOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/RepairOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/service/RepairOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/RepairOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/CarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/JobTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/MechanicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/MechanicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/RepairOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/RepairOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/ServicePostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/ServicePostTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/TimeIntervalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/TimeIntervalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/IntegrationTestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/IntegrationTestConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/OptimisticLockingIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/OptimisticLockingIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/RepairOrderIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/RepairOrderIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/pricing/DiscountRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/pricing/DiscountRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/pricing/MinimumPriceRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/pricing/MinimumPriceRuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/pricing/PriceCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/pricing/PriceCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/service/RepairOrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/service/RepairOrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/CarServiceDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/CarServiceRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/DomainException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Job.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/JobCost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/JobCost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/JobStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Mechanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Mechanic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/MechanicSpecialization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/OrderPriority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/OrderStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/RepairOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/RepairOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/ServicePost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/ServicePost.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/TaxiCompany.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/TimeInterval.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/TimeInterval.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/DiscountRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/MinimumPriceRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/PriceCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/PricingRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/CarRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/ClientRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/MechanicRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/RepairOrderRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/service/RepairOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2026-11-15T11-50-08_594-jvmRun1.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.CarTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.CarTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.CarTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.CarTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/CarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/CarTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/JobTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/JobTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/MechanicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/MechanicTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/RepairOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/RepairOrderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/ServicePostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/ServicePostTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/TimeIntervalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/TimeIntervalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/IntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/IntegrationTestConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/OptimisticLockingIT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/RepairOrderIT.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/pricing/DiscountRuleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/pricing/MinimumPriceRuleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/pricing/PriceCalculatorTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/service/RepairOrderServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,69 +125,69 @@
     &quot;assignee&quot;: &quot;semenchukkristina416-sketch&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/semenchukkristina416-sketch/Lab.3.git&quot;,
-    &quot;accountId&quot;: &quot;e69cad4a-c18f-41e6-9963-016cd7021ece&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/semenchukkristina416-sketch/LAB4.git",
+    "accountId": "e69cad4a-c18f-41e6-9963-016cd7021ece"
   }
-}</component>
+}]]></component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.000000003623422" />
-      <entry key="MS500" value="1.0205033008529993" />
-      <entry key="S2" value="1.3784043561342079" />
-      <entry key="S5" value="1.6806235770328624" />
-      <entry key="S10" value="1.8958922114737822" />
-      <entry key="S30" value="2.597432636292587" />
-      <entry key="S60" value="3.1245218903439858" />
-      <entry key="M2" value="3.5878001539444644" />
-      <entry key="M5" value="4.162333308895084" />
-      <entry key="M10" value="4.504336147594021" />
-      <entry key="M15" value="4.6491957550468275" />
-      <entry key="M30" value="4.857182041821616" />
-      <entry key="H1" value="5.373926979453735" />
-      <entry key="H2" value="6.518066184108445" />
-      <entry key="H4" value="8.377551700650788" />
-      <entry key="D1" value="16.875227684846877" />
-      <entry key="W1" value="21.11755936346404" />
+      <entry key="MS100" value="8.057457565922282E-218" />
+      <entry key="MS500" value="3.8129599847731103E-44" />
+      <entry key="S2" value="1.6314000666189237E-11" />
+      <entry key="S5" value="8.762485421864929E-5" />
+      <entry key="S10" value="0.01821706912825302" />
+      <entry key="S30" value="0.7578743713139967" />
+      <entry key="S60" value="2.074704613141749" />
+      <entry key="M2" value="3.5521390168912483" />
+      <entry key="M5" value="5.139171623047077" />
+      <entry key="M10" value="5.939362464605011" />
+      <entry key="M15" value="6.258219132041023" />
+      <entry key="M30" value="6.652426356420136" />
+      <entry key="H1" value="7.262883055414426" />
+      <entry key="H2" value="8.453565854630721" />
+      <entry key="H4" value="10.338101891486446" />
+      <entry key="D1" value="18.863196657855017" />
+      <entry key="W1" value="23.115451692095284" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="4.50770540057283E-309" />
-      <entry key="M2" value="1.4676784302797447E-154" />
-      <entry key="M5" value="7.6499608729948165E-62" />
-      <entry key="M10" value="6.1790284245400965E-31" />
-      <entry key="M15" value="1.2402693743108794E-20" />
-      <entry key="M30" value="2.490000020494891E-10" />
-      <entry key="H1" value="3.528367184783364E-5" />
-      <entry key="H2" value="0.013282173994201802" />
-      <entry key="H4" value="0.2577026615032562" />
-      <entry key="D1" value="3.050198194834962" />
-      <entry key="W1" value="4.659151871144466" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000113074519" />
+      <entry key="S5" value="1.0009381152799348" />
+      <entry key="S10" value="1.0486873555245164" />
+      <entry key="S30" value="1.7429979460308997" />
+      <entry key="S60" value="2.4887049488586177" />
+      <entry key="M2" value="3.1117931198384263" />
+      <entry key="M5" value="3.606500713885769" />
+      <entry key="M10" value="3.7962562186767377" />
+      <entry key="M15" value="3.8625665706708427" />
+      <entry key="M30" value="3.9304682855068687" />
+      <entry key="H1" value="3.9650626859743427" />
+      <entry key="H2" value="3.9956425033510206" />
+      <entry key="H4" value="4.247931428939904" />
+      <entry key="D1" value="7.046778052366407" />
+      <entry key="W1" value="8.658515821466953" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8293195487986594" />
-      <entry key="MS500" value="0.9829845820218999" />
-      <entry key="S2" value="1.3654362142031882" />
-      <entry key="S5" value="1.6742369612635257" />
-      <entry key="S10" value="1.8920471519136866" />
-      <entry key="S30" value="2.5949407498861974" />
-      <entry key="S60" value="3.1227680588453146" />
-      <entry key="M2" value="3.5867019195108294" />
-      <entry key="M5" value="4.1617918365281215" />
-      <entry key="M10" value="4.504036416243091" />
-      <entry key="M15" value="4.648987880911199" />
-      <entry key="M30" value="4.857072908582861" />
-      <entry key="H1" value="5.373903197651962" />
-      <entry key="H2" value="6.531307248867819" />
-      <entry key="H4" value="8.635164913161287" />
-      <entry key="D1" value="19.92528424088753" />
-      <entry key="W1" value="25.776680610693333" />
+      <entry key="MS100" value="7.781943291043345E-26" />
+      <entry key="MS500" value="9.51081233425214E-6" />
+      <entry key="S2" value="0.05553342158850344" />
+      <entry key="S5" value="0.3152541837770569" />
+      <entry key="S10" value="0.6132874298315679" />
+      <entry key="S30" value="2.232437632709597" />
+      <entry key="S60" value="4.372324916322686" />
+      <entry key="M2" value="6.544238079030745" />
+      <entry key="M5" value="8.689973348104946" />
+      <entry key="M10" value="9.706244274167961" />
+      <entry key="M15" value="10.100844635691477" />
+      <entry key="M30" value="10.572739225728181" />
+      <entry key="H1" value="11.222817750374272" />
+      <entry key="H2" value="12.446621286019063" />
+      <entry key="H4" value="14.584668221572604" />
+      <entry key="D1" value="25.909620099076133" />
+      <entry key="W1" value="31.773906445111624" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -116,6 +204,7 @@
     "Application.CarServiceDemo.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "JUnit.All in lab1.executor": "Run",
+    "JUnit.CarServiceTest.executor": "Run",
     "JUnit.CarTest.executor": "Run",
     "JUnit.DiscountRuleTest.executor": "Run",
     "JUnit.DomainEntitiesTest.executor": "Run",
@@ -158,7 +247,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -166,12 +255,23 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\java\lab1\src\main\resources\db" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="carservice.domain" />
+      <recent name="carservice" />
+    </key>
   </component>
   <component name="RunManager" selected="JUnit.java in lab1">
-    <configuration name="domain in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/carservice/domain" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carservice.service" />
+      <option name="MAIN_CLASS_NAME" value="carservice.service.CarServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,10 +323,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.java in lab1" />
+        <item itemvalue="JUnit.CarServiceTest" />
         <item itemvalue="Spring Boot.CarServiceDemo" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="JUnit.integration in lab1" />
-        <item itemvalue="JUnit.domain in lab1" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +355,8 @@
     <MESSAGE value="Add integration tests" />
     <MESSAGE value="Configure Docker PostgreSQL, Flyway migrations, and integration tests" />
     <MESSAGE value="Configure Docker Postgres" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configure Docker Postgres" />
+    <MESSAGE value="+++" />
+    <option name="LAST_COMMIT_MESSAGE" value="+++" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

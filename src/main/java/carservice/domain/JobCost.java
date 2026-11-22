@@ -1,5 +1,6 @@
 package carservice.domain;
 
+import carservice.exception.DomainException;
 import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
 import lombok.EqualsAndHashCode;

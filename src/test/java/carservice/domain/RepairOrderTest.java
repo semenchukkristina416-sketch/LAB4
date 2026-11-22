@@ -1,5 +1,9 @@
 package carservice.domain;
 
+import carservice.domain.enumeration.MechanicSpecialization;
+import carservice.domain.enumeration.OrderPriority;
+import carservice.domain.enumeration.OrderStatus;
+import carservice.exception.DomainException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;

@@ -1,5 +1,7 @@
 package carservice.domain;
 
+import carservice.domain.enumeration.MechanicSpecialization;
+import carservice.exception.DomainException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,5 +1,8 @@
 package carservice.domain;
 
+import carservice.exception.DomainException;
+import carservice.domain.enumeration.JobStatus;
+import carservice.domain.enumeration.MechanicSpecialization;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.ToString;

@@ -1,5 +1,8 @@
 package carservice.domain;
 
+import carservice.exception.DomainException;
+import carservice.domain.enumeration.OrderPriority;
+import carservice.domain.enumeration.OrderStatus;
 import jakarta.persistence.Version;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
