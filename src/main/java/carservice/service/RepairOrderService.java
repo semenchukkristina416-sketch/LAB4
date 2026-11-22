@@ -100,8 +100,8 @@ public class RepairOrderService {
     public Job addJobToOrder(final Long orderId, final Job job) {
         RepairOrder order = getOrderById(orderId);
         order.addJob(job);
-        repository.save(order);
-        return job;
+        RepairOrder saved = repository.saveAndFlush(order);
+        return saved.getJobs().getLast();
     }
 
     @Transactional

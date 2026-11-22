@@ -4,34 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="Upgrade to Spring Boot 4.0.0, Java 25 and PostgreSQL 18">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="++++">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/CarServiceRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/RepairOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/RepairOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/repository/RepairOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/RepairOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/CarService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/MechanicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/MechanicService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/RepairOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/RepairOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/RepairOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/RepairOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/service/RepairOrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/service/RepairOrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/CarServiceRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/RepairOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/RepairOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/repository/CarRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/repository/CarRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/repository/RepairOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/repository/RepairOrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/CarService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/ClientService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/MechanicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/MechanicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/integration/OptimisticLockingIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/OptimisticLockingIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/RepairOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/RepairOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab1-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab1-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab1-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab1-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.api.ClientControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.api.ClientControllerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.CarTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.CarTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.DomainValidationParameterizedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.DomainValidationParameterizedTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.JobTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.JobTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.MechanicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.MechanicTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.RepairOrderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.RepairOrderTest.xml" afterDir="false" />
@@ -44,10 +28,13 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.ClientServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.ClientServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.MechanicServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.MechanicServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.RepairOrderServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.RepairOrderServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.api.ClientControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.api.ClientControllerTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.CarTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.CarTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.DomainValidationParameterizedTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.DomainValidationParameterizedTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.JobTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.JobTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.MechanicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.MechanicTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.RepairOrderTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.RepairOrderTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.ServicePostTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.ServicePostTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.TimeIntervalTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.TimeIntervalTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.DiscountRuleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.DiscountRuleTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.MinimumPriceRuleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.MinimumPriceRuleTest.txt" afterDir="false" />
@@ -56,8 +43,7 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.service.ClientServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.service.ClientServiceTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.service.MechanicServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.service.MechanicServiceTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.service.RepairOrderServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.service.RepairOrderServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/RepairOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/RepairOrderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/service/RepairOrderServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/service/RepairOrderServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/integration/OptimisticLockingIT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/integration/OptimisticLockingIT.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,11 +171,13 @@
     "JUnit.domain in lab1.executor": "Run",
     "JUnit.integration in lab1.executor": "Run",
     "JUnit.java in lab1.executor": "Run",
+    "Maven.lab1 [verify].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CarServiceDemo (1).executor": "Run",
     "Spring Boot.CarServiceDemo.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -221,7 +209,7 @@
       <recent name="carservice" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.java in lab1">
+  <component name="RunManager" selected="Spring Boot.CarServiceDemo (1)">
     <configuration name="CarServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <extension name="coverage">
@@ -237,18 +225,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="integration in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/carservice/domain/integration" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="java in lab1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="TEST_OBJECT" value="directory" />
       <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarServiceDemo (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="lab1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="carservice.CarServiceDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -283,11 +277,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CarServiceDemo (1)" />
         <item itemvalue="JUnit.java in lab1" />
         <item itemvalue="JUnit.CarServiceTest" />
         <item itemvalue="Spring Boot.CarServiceDemo" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="JUnit.integration in lab1" />
       </list>
     </recent_temporary>
   </component>
@@ -318,7 +312,21 @@
     <MESSAGE value="Configure Docker Postgres" />
     <MESSAGE value="+++" />
     <MESSAGE value="Upgrade to Spring Boot 4.0.0, Java 25 and PostgreSQL 18" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade to Spring Boot 4.0.0, Java 25 and PostgreSQL 18" />
+    <MESSAGE value="++++" />
+    <option name="LAST_COMMIT_MESSAGE" value="++++" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/carservice/e2e/CarServiceE2E.java</url>
+          <line>135</line>
+          <log-expression expression="package carservice.e2e;&#10;&#10;import carservice.api.dto.CarCreateRequest;&#10;import carservice.api.dto.ClientCreateRequest;&#10;import carservice.api.dto.ClientResponse;&#10;import carservice.api.dto.CarResponse;&#10;import carservice.api.dto.JobRequest;&#10;import carservice.api.dto.JobResponse;&#10;import carservice.api.dto.MechanicCreateRequest;&#10;import carservice.api.dto.MechanicResponse;&#10;import carservice.api.dto.OrderCreateRequest;&#10;import carservice.api.dto.OrderResponse;&#10;import carservice.api.dto.StartOrderRequest;&#10;import carservice.domain.enumeration.MechanicSpecialization;&#10;import carservice.domain.enumeration.OrderPriority;&#10;import org.junit.jupiter.api.Test;&#10;import org.junit.jupiter.api.BeforeEach;&#10;import org.springframework.boot.test.context.SpringBootTest;&#10;import org.springframework.boot.test.web.server.LocalServerPort;&#10;import org.springframework.context.annotation.Import;&#10;import org.springframework.test.context.ActiveProfiles;&#10;import org.springframework.test.web.servlet.client.RestTestClient;&#10;&#10;import java.math.BigDecimal;&#10;import java.time.LocalDateTime;&#10;&#10;import static org.junit.jupiter.api.Assertions.assertEquals;&#10;import static org.junit.jupiter.api.Assertions.assertNotNull;&#10;&#10;@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)&#10;@Import(carservice.integration.IntegrationTestConfiguration.class)&#10;@ActiveProfiles(&quot;test&quot;)&#10;class CarServiceE2E {&#10;&#10;    private RestTestClient client;&#10;&#10;    @LocalServerPort&#10;    private int port;&#10;&#10;    @BeforeEach&#10;    void setUpClient() {&#10;        this.client = RestTestClient.bindToServer()&#10;                .baseUrl(&quot;http://localhost:&quot; + port)&#10;                .build();&#10;    }&#10;&#10;    @Test&#10;    void completesFullOrderLifecycleThroughHttp() {&#10;        ClientResponse createdClient = client.post().uri(&quot;/api/clients&quot;)&#10;                .body(new ClientCreateRequest(&quot;E2E Client&quot;, &quot;+380671234567&quot;))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(ClientResponse.class).returnResult().getResponseBody();&#10;        assertNotNull(createdClient);&#10;&#10;        CarResponse createdCar = client.post().uri(&quot;/api/cars&quot;)&#10;                .body(new CarCreateRequest(&quot;E2E&quot; + System.nanoTime(), &quot;Toyota&quot;, &quot;Camry&quot;, createdClient.id()))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(CarResponse.class).returnResult().getResponseBody();&#10;        Long carId = createdCar == null ? null : createdCar.id();&#10;        assertNotNull(carId);&#10;&#10;        MechanicResponse mechanic = client.post().uri(&quot;/api/mechanics&quot;)&#10;                .body(new MechanicCreateRequest(&quot;E2E Mechanic&quot;, MechanicSpecialization.GENERAL))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(MechanicResponse.class).returnResult().getResponseBody();&#10;        assertNotNull(mechanic);&#10;&#10;        OrderResponse order = client.post().uri(&quot;/api/orders&quot;)&#10;                .body(new OrderCreateRequest(carId, OrderPriority.NORMAL, LocalDateTime.now().plusDays(1), 60))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(OrderResponse.class).returnResult().getResponseBody();&#10;        assertNotNull(order);&#10;&#10;        JobResponse job = client.post().uri(&quot;/api/orders/{id}/jobs&quot;, order.id())&#10;                .body(new JobRequest(&quot;Diagnostics&quot;, &quot;Full diagnostics&quot;, new BigDecimal(&quot;100&quot;),&#10;                        new BigDecimal(&quot;200&quot;), MechanicSpecialization.GENERAL))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(JobResponse.class).returnResult().getResponseBody();&#10;        client.post().uri(&quot;/api/orders/{id}/approve&quot;, order.id())&#10;                .exchange().expectStatus().isOk();&#10;        client.post().uri(&quot;/api/orders/{id}/start&quot;, order.id())&#10;                .body(new StartOrderRequest(mechanic.id()))&#10;                .exchange().expectStatus().isOk();&#10;        client.post().uri(&quot;/api/orders/{orderId}/jobs/{jobId}/start&quot;, order.id(), job.id())&#10;                .exchange().expectStatus().isOk();&#10;        client.post().uri(&quot;/api/orders/{orderId}/jobs/{jobId}/complete&quot;, order.id(), job.id())&#10;                .exchange().expectStatus().isOk();&#10;        OrderResponse completed = client.post().uri(&quot;/api/orders/{id}/complete&quot;, order.id())&#10;                .exchange().expectStatus().isOk()&#10;                .expectBody(OrderResponse.class).returnResult().getResponseBody();&#10;&#10;        assertNotNull(completed);&#10;        assertEquals(&quot;COMPLETED&quot;, completed.status().name());&#10;        assertNotNull(completed.finalCommercialPrice());&#10;    }&#10;&#10;    @Test&#10;    void returnsProblemDetailForInvalidRequest() {&#10;        client.post().uri(&quot;/api/clients&quot;)&#10;                .body(new ClientCreateRequest(&quot;&quot;, &quot;&quot;))&#10;                .exchange().expectStatus().isBadRequest()&#10;                .expectBody().jsonPath(&quot;$.title&quot;).isEqualTo(&quot;Validation failed&quot;)&#10;                .jsonPath(&quot;$.fieldErrors.name&quot;).exists();&#10;    }&#10;&#10;    @Test&#10;    void rejectsAssigningBusyMechanicWithProblemDetail() {&#10;        ClientResponse owner = client.post().uri(&quot;/api/clients&quot;)&#10;                .body(new ClientCreateRequest(&quot;Busy test client&quot;, &quot;+380&quot; + System.nanoTime()))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(ClientResponse.class).returnResult().getResponseBody();&#10;        CarResponse car = client.post().uri(&quot;/api/cars&quot;)&#10;                .body(new CarCreateRequest(&quot;BUSY&quot; + System.nanoTime(), &quot;Honda&quot;, &quot;Civic&quot;, owner.id()))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(CarResponse.class).returnResult().getResponseBody();&#10;        MechanicResponse mechanic = client.post().uri(&quot;/api/mechanics&quot;)&#10;                .body(new MechanicCreateRequest(&quot;Busy mechanic&quot;, MechanicSpecialization.GENERAL))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(MechanicResponse.class).returnResult().getResponseBody();&#10;&#10;        OrderResponse first = createApprovedOrder(car.id(), &quot;First order&quot;);&#10;        OrderResponse second = createApprovedOrder(car.id(), &quot;Second order&quot;);&#10;&#10;        client.post().uri(&quot;/api/orders/{id}/start&quot;, first.id())&#10;                .body(new StartOrderRequest(mechanic.id()))&#10;                .exchange().expectStatus().isOk();&#10;&#10;        client.post().uri(&quot;/api/orders/{id}/start&quot;, second.id())&#10;                .body(new StartOrderRequest(mechanic.id()))&#10;                .exchange().expectStatus().isEqualTo(409)&#10;                .expectBody().jsonPath(&quot;$.title&quot;).isEqualTo(&quot;Business rule violation&quot;)&#10;                .jsonPath(&quot;$.detail&quot;).exists();&#10;    }&#10;&#10;    private OrderResponse createApprovedOrder(final Long carId, final String suffix) {&#10;        OrderResponse order = client.post().uri(&quot;/api/orders&quot;)&#10;                .body(new OrderCreateRequest(carId, OrderPriority.NORMAL,&#10;                        LocalDateTime.now().plusDays(1), 60))&#10;                .exchange().expectStatus().isCreated()&#10;                .expectBody(OrderResponse.class).returnResult().getResponseBody();&#10;        client.post().uri(&quot;/api/orders/{id}/jobs&quot;, order.id())&#10;                .body(new JobRequest(suffix, &quot;E2E job&quot;, new BigDecimal(&quot;50&quot;),&#10;                        new BigDecimal(&quot;50&quot;), MechanicSpecialization.GENERAL))&#10;                .exchange().expectStatus().isCreated();&#10;        return client.post().uri(&quot;/api/orders/{id}/approve&quot;, order.id())&#10;                .exchange().expectStatus().isOk()&#10;                .expectBody(OrderResponse.class).returnResult().getResponseBody();&#10;    }&#10;}" />
+          <placement>INTER_LINE</placement>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

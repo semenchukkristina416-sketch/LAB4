@@ -1,5 +1,6 @@
 package carservice.integration;
 
+import carservice.domain.Mechanic;
 import carservice.domain.Car;
 import carservice.domain.Client;
 import carservice.domain.Job;
@@ -72,16 +73,20 @@ class OptimisticLockingIT extends IntegrationTest {
     @Test
     @DisplayName("Throws ObjectOptimisticLockingFailureException on concurrent order update")
     void throwsOptimisticLockingExceptionOnConcurrentUpdate() {
+        Mechanic mechanic = mechanicRepository.save(
+                new Mechanic("Oleh Koval", MechanicSpecialization.GENERAL)
+        );
 
         RepairOrder manager1Copy = repairOrderService.getOrderById(orderId);
         RepairOrder manager2Copy = repairOrderService.getOrderById(orderId);
 
         assertEquals(manager1Copy.getVersion(), manager2Copy.getVersion());
 
-        manager1Copy.diagnose();
+        manager1Copy.assignMechanic(mechanic);
+        manager1Copy.startExecution();
         repairOrderRepository.saveAndFlush(manager1Copy);
 
-        manager2Copy.completeOrder();
+        manager2Copy.cancel();
 
         assertThrows(ObjectOptimisticLockingFailureException.class, () ->
                 repairOrderRepository.saveAndFlush(manager2Copy)
