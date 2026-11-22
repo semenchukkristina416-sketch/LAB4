@@ -1,0 +1,92 @@
+@baseUrl = http://localhost:8080
+
+### Create client
+# @name createClient
+POST {{baseUrl}}/api/clients
+Content-Type: application/json
+
+{
+  "name": "Ivan Petrenko",
+  "phone": "+380991234567"
+}
+
+> {% client.global.set("clientId", response.body.id); %}
+
+### Create car
+# @name createCar
+POST {{baseUrl}}/api/cars
+Content-Type: application/json
+
+{
+  "licensePlate": "AA1234BB",
+  "brand": "Toyota",
+  "model": "Camry",
+  "ownerId": {{clientId}}
+}
+
+> {% client.global.set("carId", response.body.id); %}
+
+### Create mechanic
+POST {{baseUrl}}/api/mechanics
+Content-Type: application/json
+
+{
+  "name": "Oleh Kovalenko",
+  "specialization": "GENERAL"
+}
+
+> {% client.global.set("mechanicId", response.body.id); %}
+
+### Create order
+POST {{baseUrl}}/api/orders
+Content-Type: application/json
+
+{
+  "carId": {{carId}},
+  "priority": "NORMAL",
+  "plannedStart": "2026-12-01T09:00:00",
+  "plannedDurationMinutes": 120
+}
+
+> {% client.global.set("orderId", response.body.id); %}
+
+### Add a job
+POST {{baseUrl}}/api/orders/{{orderId}}/jobs
+Content-Type: application/json
+
+{
+  "name": "Engine diagnostics",
+  "description": "Computer diagnostics",
+  "partsCost": 200,
+  "laborCost": 300,
+  "requiredSpecialization": "ENGINE"
+}
+
+### Approve, start and complete order
+POST {{baseUrl}}/api/orders/{{orderId}}/approve
+
+### Start order with mechanic
+POST {{baseUrl}}/api/orders/{{orderId}}/start
+Content-Type: application/json
+
+{
+  "mechanicId": {{mechanicId}}
+}
+
+### Complete order
+POST {{baseUrl}}/api/orders/{{orderId}}/complete
+
+### List orders with filtering and pagination
+GET {{baseUrl}}/api/orders?status=COMPLETED&page=0&size=20&sort=id
+
+### Negative: invalid client
+POST {{baseUrl}}/api/clients
+Content-Type: application/json
+
+{
+  "name": "",
+  "phone": ""
+}
+
+### Negative: missing order
+GET {{baseUrl}}/api/orders/999999999
