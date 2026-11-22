@@ -3,6 +3,7 @@ package carservice.service;
 import carservice.domain.Mechanic;
 import carservice.domain.enumeration.MechanicSpecialization;
 import carservice.exception.DomainException;
+import carservice.exception.ResourceNotFoundException;
 import carservice.repository.MechanicRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -30,6 +31,6 @@ public class MechanicService {
     @Transactional(readOnly = true)
     public Mechanic getById(final Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new DomainException("Mechanic with ID " + id + " not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Mechanic with ID " + id + " not found"));
     }
 }

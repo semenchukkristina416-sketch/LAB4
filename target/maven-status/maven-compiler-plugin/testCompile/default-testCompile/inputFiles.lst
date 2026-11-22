@@ -1,9 +1,13 @@
+C:\java\lab1\src\test\java\carservice\api\ClientControllerTest.java
 C:\java\lab1\src\test\java\carservice\domain\CarTest.java
+C:\java\lab1\src\test\java\carservice\domain\DomainValidationParameterizedTest.java
 C:\java\lab1\src\test\java\carservice\domain\JobTest.java
 C:\java\lab1\src\test\java\carservice\domain\MechanicTest.java
 C:\java\lab1\src\test\java\carservice\domain\RepairOrderTest.java
 C:\java\lab1\src\test\java\carservice\domain\ServicePostTest.java
 C:\java\lab1\src\test\java\carservice\domain\TimeIntervalTest.java
+C:\java\lab1\src\test\java\carservice\e2e\CarServiceE2E.java
+C:\java\lab1\src\test\java\carservice\integration\ApiMockMvcIT.java
 C:\java\lab1\src\test\java\carservice\integration\IntegrationTest.java
 C:\java\lab1\src\test\java\carservice\integration\IntegrationTestConfiguration.java
 C:\java\lab1\src\test\java\carservice\integration\OptimisticLockingIT.java

@@ -42,10 +42,31 @@ The project is divided into distinct architectural packages:
    mvn test -DskipITs
    ```
 
-3. Run integration tests (`RepairOrderIT`, `OptimisticLockingIT`) from IntelliJ after starting Docker Desktop, or explicitly with Maven:
+3. Run integration and E2E tests (`*IT`, `*E2E`) after starting Docker Desktop:
 
    ```shell
-   mvn -Dtest=RepairOrderIT,OptimisticLockingIT test
+   mvn verify
    ```
 
 The integration tests use Testcontainers and require access to the Docker engine. If Docker is not running, those tests fail before application logic is executed; the unit tests remain runnable independently.
+
+### 4. REST API
+
+The application exposes the following resources under `/api`:
+
+- `clients`, `cars`, and `mechanics`: create and get by identifier;
+- `orders`: create, get, filter by status, paginate, and sort;
+- order actions: `approve`, `start`, `complete`, and `cancel`;
+- order jobs: add one job, add a batch, start a job, and mark a job completed.
+
+State transitions are separate `POST` actions. There is no generic status update endpoint. Requests use DTOs with Bean Validation, while responses never expose JPA entities. Errors use RFC 9457 `ProblemDetail`; validation errors include a `fieldErrors` object. Business-rule conflicts and duplicate license plates return `409 Conflict`.
+
+An IntelliJ HTTP request collection is available in [`car-service.http`](C:/java/lab1/car-service.http).
+
+### 5. Test levels
+
+- Unit tests: domain, pricing, services, DTO/controller validation, and parameterized invalid-input cases.
+- Integration tests: PostgreSQL Testcontainers with the same Flyway migrations as the application, including a full MockMvc request.
+- E2E tests: `CarServiceE2E` uses `@SpringBootTest(webEnvironment = RANDOM_PORT)` and `RestTestClient`; it communicates only through HTTP.
+
+Test data is generated per scenario and database-backed tests clean their data between cases. A transaction opened by an E2E test would not roll back changes made by the separately running HTTP server, so E2E isolation is handled through independent data and cleanup rather than a test transaction.

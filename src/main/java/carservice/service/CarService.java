@@ -3,6 +3,8 @@ package carservice.service;
 import carservice.domain.Car;
 import carservice.domain.Client;
 import carservice.exception.DomainException;
+import carservice.exception.ConflictException;
+import carservice.exception.ResourceNotFoundException;
 import carservice.repository.CarRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,9 @@ public class CarService {
     @Transactional
     public Car create(final String licensePlate, final String brand, final String model,
                       final Long ownerId) {
+        if (repository.existsByLicensePlateIgnoreCase(licensePlate)) {
+            throw new ConflictException("Car with license plate " + licensePlate + " already exists");
+        }
         return save(new Car(licensePlate, brand, model, clientService.getById(ownerId)));
     }
 
@@ -32,6 +37,6 @@ public class CarService {
     @Transactional(readOnly = true)
     public Car getById(final Long id) {
         return repository.findById(id)
-                .orElseThrow(() -> new DomainException("Car with ID " + id + " not found"));
+                .orElseThrow(() -> new ResourceNotFoundException("Car with ID " + id + " not found"));
     }
 }

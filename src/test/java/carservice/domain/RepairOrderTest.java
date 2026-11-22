@@ -153,6 +153,10 @@ class RepairOrderTest {
     @Test
     void shouldCompleteOrderSuccessfully() {
         RepairOrder order = new RepairOrder(car, OrderPriority.NORMAL, LocalDateTime.now(), 120);
+        order.addJob(job);
+        order.approve();
+        order.assignMechanic(mechanic);
+        order.startExecution();
         order.completeOrder();
 
         assertEquals(OrderStatus.COMPLETED, order.getStatus());

@@ -60,6 +60,9 @@ class RepairOrderServiceTest {
     void startOrderExecution_logic() {
         when(repository.findById(1L)).thenReturn(Optional.of(order));
         Mechanic mech = new Mechanic("M1", MechanicSpecialization.ENGINE);
+        order.addJob(new Job("Test Job", "J", BigDecimal.ONE, BigDecimal.ONE,
+                MechanicSpecialization.ENGINE));
+        order.approve();
 
         service.startOrderExecution(1L, mech);
 
@@ -73,6 +76,11 @@ class RepairOrderServiceTest {
     void completeOrder_logic() {
         when(repository.findById(1L)).thenReturn(Optional.of(order));
         when(calculator.calculateCommercialPrice(order)).thenReturn(new BigDecimal("1000.00"));
+        order.addJob(new Job("Test Job", "J", BigDecimal.ONE, BigDecimal.ONE,
+                MechanicSpecialization.ENGINE));
+        order.approve();
+        order.assignMechanic(new Mechanic("M1", MechanicSpecialization.ENGINE));
+        order.startExecution();
 
         service.completeOrder(1L);
 

@@ -4,99 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="+++">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0c097bfd-030a-4f6a-8732-abff87301b21" name="Changes" comment="Upgrade to Spring Boot 4.0.0, Java 25 and PostgreSQL 18">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/CarServiceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/CarServiceDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/CarServiceRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/CarServiceRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/DomainException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/JobCost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/JobCost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/JobStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/JobStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/Mechanic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/Mechanic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/MechanicSpecialization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/MechanicSpecialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/OrderPriority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/OrderPriority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/enumeration/OrderStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/CarServiceRunner.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/RepairOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/RepairOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/ServicePost.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/domain/ServicePost.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/TaxiCompany.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/TimeInterval.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/DiscountRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/DiscountRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/MinimumPriceRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/MinimumPriceRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/PriceCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/PriceCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/pricing/PricingRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/pricing/PricingRule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/CarRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/InMemoryRepairOrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/MechanicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/MechanicRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/repository/RepairOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/RepairOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/domain/service/RepairOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/RepairOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/CarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/CarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/JobTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/MechanicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/MechanicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/repository/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/repository/RepairOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/repository/RepairOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/MechanicService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/MechanicService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/carservice/service/RepairOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/carservice/service/RepairOrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/RepairOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/RepairOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/ServicePostTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/ServicePostTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/TimeIntervalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/domain/TimeIntervalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/IntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/IntegrationTestConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/IntegrationTestConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/OptimisticLockingIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/OptimisticLockingIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/integration/RepairOrderIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/integration/RepairOrderIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/pricing/DiscountRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/pricing/DiscountRuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/pricing/MinimumPriceRuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/pricing/MinimumPriceRuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/pricing/PriceCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/pricing/PriceCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/domain/service/RepairOrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/service/RepairOrderServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/CarServiceDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/CarServiceRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/DomainException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/JobCost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/JobCost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/JobStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/Mechanic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/Mechanic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/MechanicSpecialization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/OrderPriority.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/OrderStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/carservice/service/RepairOrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/carservice/service/RepairOrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/CarServiceRunner.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/RepairOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/RepairOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/ServicePost.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/ServicePost.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/TaxiCompany.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/TimeInterval.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/domain/TimeInterval.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/DiscountRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/MinimumPriceRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/PriceCalculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/pricing/PricingRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/CarRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/ClientRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/MechanicRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/repository/RepairOrderRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/carservice/domain/service/RepairOrderService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/repository/CarRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/repository/CarRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/repository/RepairOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/repository/RepairOrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/CarService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/CarService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/ClientService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/ClientService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/MechanicService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/MechanicService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/carservice/service/RepairOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/carservice/service/RepairOrderService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2026-11-15T11-50-08_594-jvmRun1.dumpstream" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.CarTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.CarTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.JobTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.JobTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.MechanicTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.MechanicTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.RepairOrderTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.RepairOrderTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.ServicePostTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.ServicePostTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.TimeIntervalTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.domain.TimeIntervalTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.pricing.DiscountRuleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.pricing.DiscountRuleTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.pricing.MinimumPriceRuleTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.pricing.MinimumPriceRuleTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.pricing.PriceCalculatorTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.pricing.PriceCalculatorTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.CarServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.CarServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.ClientServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.ClientServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.MechanicServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.MechanicServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.RepairOrderServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-carservice.service.RepairOrderServiceTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.CarTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.CarTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/CarTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/CarTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/JobTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/JobTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/MechanicTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/MechanicTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.JobTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.JobTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.MechanicTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.MechanicTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.RepairOrderTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.RepairOrderTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.TimeIntervalTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.domain.TimeIntervalTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.DiscountRuleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.DiscountRuleTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.MinimumPriceRuleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.MinimumPriceRuleTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.PriceCalculatorTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.pricing.PriceCalculatorTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.service.CarServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.service.CarServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.service.ClientServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.service.ClientServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.service.MechanicServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.service.MechanicServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/carservice.service.RepairOrderServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/carservice.service.RepairOrderServiceTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/RepairOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/RepairOrderTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/ServicePostTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/ServicePostTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/TimeIntervalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/domain/TimeIntervalTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/IntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/IntegrationTestConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/OptimisticLockingIT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/integration/RepairOrderIT.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/pricing/DiscountRuleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/pricing/MinimumPriceRuleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/pricing/PriceCalculatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/domain/service/RepairOrderServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/carservice/service/RepairOrderServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/carservice/service/RepairOrderServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +317,8 @@
     <MESSAGE value="Configure Docker PostgreSQL, Flyway migrations, and integration tests" />
     <MESSAGE value="Configure Docker Postgres" />
     <MESSAGE value="+++" />
-    <option name="LAST_COMMIT_MESSAGE" value="+++" />
+    <MESSAGE value="Upgrade to Spring Boot 4.0.0, Java 25 and PostgreSQL 18" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade to Spring Boot 4.0.0, Java 25 and PostgreSQL 18" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

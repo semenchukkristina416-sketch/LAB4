@@ -51,6 +51,12 @@ public class RepairOrder {
     @Transient
     private TimeInterval plannedInterval;
 
+    @Column(name = "planned_start", nullable = false)
+    private LocalDateTime plannedStart;
+
+    @Column(name = "planned_end", nullable = false)
+    private LocalDateTime plannedEnd;
+
     @Column(name = "total_price")
     private BigDecimal finalCommercialPrice;
 
@@ -71,6 +77,8 @@ public class RepairOrder {
         this.priority = priority;
 
         this.plannedInterval = new TimeInterval(plannedStart, plannedDurationMinutes);
+        this.plannedStart = plannedStart;
+        this.plannedEnd = this.plannedInterval.getEnd();
 
         this.jobs = new ArrayList<>();
         this.status = OrderStatus.CREATED;
@@ -84,10 +92,16 @@ public class RepairOrder {
     }
 
     public void diagnose() {
+        if (status != OrderStatus.CREATED) {
+            throw new DomainException("Only a created order can be sent to diagnosis");
+        }
         this.status = OrderStatus.DIAGNOSIS;
     }
 
     public void approve() {
+        if (status != OrderStatus.CREATED && status != OrderStatus.DIAGNOSIS) {
+            throw new DomainException("Only a created or diagnosed order can be approved");
+        }
         if (jobs.isEmpty()) {
             throw new DomainException("It is not possible to approve an order without work items");
         }
@@ -107,6 +121,9 @@ public class RepairOrder {
     }
 
     public void startExecution() {
+        if (status != OrderStatus.APPROVED) {
+            throw new DomainException("Only an approved order can be started");
+        }
         if (mechanic == null) {
             throw new DomainException("Cannot start work: no mechanic assigned.");
         }
@@ -114,7 +131,17 @@ public class RepairOrder {
     }
 
     public void completeOrder() {
+        if (status != OrderStatus.IN_PROGRESS) {
+            throw new DomainException("Only an order in progress can be completed");
+        }
         this.status = OrderStatus.COMPLETED;
+    }
+
+    public void cancel() {
+        if (status == OrderStatus.COMPLETED || status == OrderStatus.CANCELLED) {
+            throw new DomainException("Completed or cancelled orders cannot be cancelled");
+        }
+        this.status = OrderStatus.CANCELLED;
     }
 
     public BigDecimal calculateBaseTotal() {
@@ -151,6 +178,12 @@ public class RepairOrder {
     }
     public TimeInterval getPlannedInterval() {
         return plannedInterval;
+    }
+    public LocalDateTime getPlannedStart() {
+        return plannedStart;
+    }
+    public LocalDateTime getPlannedEnd() {
+        return plannedEnd;
     }
     public BigDecimal getFinalCommercialPrice() {
         return finalCommercialPrice;
