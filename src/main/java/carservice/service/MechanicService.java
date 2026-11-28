@@ -5,6 +5,8 @@ import carservice.domain.enumeration.MechanicSpecialization;
 import carservice.exception.DomainException;
 import carservice.exception.ResourceNotFoundException;
 import carservice.repository.MechanicRepository;
+import carservice.repository.RepairOrderRepository;
+import carservice.domain.enumeration.OrderStatus;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class MechanicService {
 
     private final MechanicRepository repository;
+    private final RepairOrderRepository repairOrderRepository;
 
     @Transactional
     public Mechanic create(final String name, final MechanicSpecialization specialization) {
@@ -32,5 +35,11 @@ public class MechanicService {
     public Mechanic getById(final Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Mechanic with ID " + id + " not found"));
+    }
+
+    @Transactional(readOnly = true)
+    public boolean isBusy(final Long mechanicId) {
+        return repairOrderRepository.existsByMechanicIdAndStatusIn(
+                mechanicId, java.util.List.of(OrderStatus.IN_PROGRESS));
     }
 }

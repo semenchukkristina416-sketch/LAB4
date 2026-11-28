@@ -4,6 +4,8 @@ import carservice.domain.Mechanic;
 import carservice.domain.enumeration.MechanicSpecialization;
 import carservice.exception.DomainException;
 import carservice.repository.MechanicRepository;
+import carservice.repository.RepairOrderRepository;
+import carservice.domain.enumeration.OrderStatus;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -24,6 +26,9 @@ class MechanicServiceTest {
 
     @Mock
     private MechanicRepository repository;
+
+    @Mock
+    private RepairOrderRepository repairOrderRepository;
 
     @InjectMocks
     private MechanicService service;
@@ -57,5 +62,13 @@ class MechanicServiceTest {
         when(repository.findById(1L)).thenReturn(Optional.empty());
 
         assertThrows(DomainException.class, () -> service.getById(1L));
+    }
+
+    @Test
+    void isBusyIsComputedFromActiveOrders() {
+        when(repairOrderRepository.existsByMechanicIdAndStatusIn(1L,
+                java.util.List.of(OrderStatus.IN_PROGRESS))).thenReturn(true);
+
+        assertEquals(true, service.isBusy(1L));
     }
 }

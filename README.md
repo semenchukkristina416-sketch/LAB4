@@ -4,6 +4,7 @@ A console application for a car repair workshop management, implemented followin
 
 ## Technologies
 - **Programming Language**: Java 25
+- **Framework**: Spring Boot 4.2.0
 - **Build & Dependency Management**: Apache Maven
 - **Code Generation Library**: Lombok (v1.18.48)
 - **Testing**: JUnit 5, Mockito
@@ -55,6 +56,7 @@ The integration tests use Testcontainers and require access to the Docker engine
 The application exposes the following resources under `/api`:
 
 - `clients`, `cars`, and `mechanics`: create and get by identifier;
+- cars include a validated `productionYear`; impossible combinations such as a BMW X5 from 1922 are rejected by the domain;
 - `orders`: create, get, filter by status, paginate, and sort;
 - order actions: `approve`, `start`, `complete`, and `cancel`;
 - order jobs: add one job, add a batch, start a job, and mark a job completed.
@@ -68,5 +70,6 @@ An IntelliJ HTTP request collection is available in [`car-service.http`](C:/java
 - Unit tests: domain, pricing, services, DTO/controller validation, and parameterized invalid-input cases.
 - Integration tests: PostgreSQL Testcontainers with the same Flyway migrations as the application, including a full MockMvc request.
 - E2E tests: `CarServiceE2E` uses `@SpringBootTest(webEnvironment = RANDOM_PORT)` and `RestTestClient`; it communicates only through HTTP.
+- `Mechanic.isBusy()` is a computed, transient value based on assigned orders in `IN_PROGRESS`, not a stored database flag.
 
 Test data is generated per scenario and database-backed tests clean their data between cases. A transaction opened by an E2E test would not roll back changes made by the separately running HTTP server, so E2E isolation is handled through independent data and cleanup rather than a test transaction.

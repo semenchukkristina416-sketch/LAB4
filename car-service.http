@@ -21,6 +21,7 @@ Content-Type: application/json
   "licensePlate": "AA1234BB",
   "brand": "Toyota",
   "model": "Camry",
+  "productionYear": 2020,
   "ownerId": {{clientId}}
 }
 

@@ -1,15 +1,19 @@
 package carservice.domain;
 
-import carservice.exception.DomainException;
 import carservice.domain.enumeration.MechanicSpecialization;
+import carservice.domain.enumeration.OrderStatus;
+import carservice.exception.DomainException;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.ToString;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "mechanics")
 @Getter
-@ToString
+@ToString(exclude = "orders")
 public class Mechanic {
 
     @Id
@@ -23,6 +27,9 @@ public class Mechanic {
     @Column(nullable = false)
     private MechanicSpecialization specialization;
 
+    @OneToMany(mappedBy = "mechanic", fetch = FetchType.LAZY)
+    private List<RepairOrder> orders = new ArrayList<>();
+
     protected Mechanic() {
     }
 
@@ -35,6 +42,22 @@ public class Mechanic {
 
         this.name = name;
         this.specialization = specialization;
+    }
+
+    @Transient
+    public boolean isBusy() {
+        return orders != null && orders.stream()
+                .anyMatch(order -> order.getStatus() == OrderStatus.IN_PROGRESS);
+    }
+
+    void registerOrder(final RepairOrder order) {
+        if (order != null && !orders.contains(order)) {
+            orders.add(order);
+        }
+    }
+
+    void unregisterOrder(final RepairOrder order) {
+        orders.remove(order);
     }
 
     public final boolean canPerform(final MechanicSpecialization requiredSpec) {

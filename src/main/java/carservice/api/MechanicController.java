@@ -19,12 +19,14 @@ public class MechanicController {
 
     @PostMapping
     ResponseEntity<MechanicResponse> create(@Valid @RequestBody MechanicCreateRequest request) {
-        MechanicResponse response = mapper.toResponse(service.create(request.name(), request.specialization()));
+        var mechanic = service.create(request.name(), request.specialization());
+        MechanicResponse response = mapper.toResponse(mechanic, service.isBusy(mechanic.getId()));
         return ResponseEntity.created(URI.create("/api/mechanics/" + response.id())).body(response);
     }
 
     @GetMapping("/{id}")
     MechanicResponse get(@PathVariable Long id) {
-        return mapper.toResponse(service.getById(id));
+        var mechanic = service.getById(id);
+        return mapper.toResponse(mechanic, service.isBusy(mechanic.getId()));
     }
 }

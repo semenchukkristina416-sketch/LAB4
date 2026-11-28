@@ -23,11 +23,15 @@ public class ApiMapper {
 
     public CarResponse toResponse(final Car car) {
         return new CarResponse(car.getId(), car.getLicensePlate(), car.getBrand(), car.getModel(),
-                car.getOwner().getId());
+                car.getProductionYear(), car.getOwner().getId());
     }
 
     public MechanicResponse toResponse(final Mechanic mechanic) {
-        return new MechanicResponse(mechanic.getId(), mechanic.getName(), mechanic.getSpecialization());
+        return toResponse(mechanic, mechanic.isBusy());
+    }
+
+    public MechanicResponse toResponse(final Mechanic mechanic, final boolean busy) {
+        return new MechanicResponse(mechanic.getId(), mechanic.getName(), mechanic.getSpecialization(), busy);
     }
 
     public JobResponse toResponse(final Job job) {

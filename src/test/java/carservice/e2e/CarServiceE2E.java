@@ -53,7 +53,8 @@ class CarServiceE2E {
         assertNotNull(createdClient);
 
         CarResponse createdCar = client.post().uri("/api/cars")
-                .body(new CarCreateRequest("E2E" + System.nanoTime(), "Toyota", "Camry", createdClient.id()))
+                .body(new CarCreateRequest("E2E" + System.nanoTime(), "Toyota", "Camry", 2020,
+                        createdClient.id()))
                 .exchange().expectStatus().isCreated()
                 .expectBody(CarResponse.class).returnResult().getResponseBody();
         Long carId = createdCar == null ? null : createdCar.id();
@@ -110,7 +111,7 @@ class CarServiceE2E {
                 .exchange().expectStatus().isCreated()
                 .expectBody(ClientResponse.class).returnResult().getResponseBody();
         CarResponse car = client.post().uri("/api/cars")
-                .body(new CarCreateRequest("BUSY" + System.nanoTime(), "Honda", "Civic", owner.id()))
+                .body(new CarCreateRequest("BUSY" + System.nanoTime(), "Honda", "Civic", 2020, owner.id()))
                 .exchange().expectStatus().isCreated()
                 .expectBody(CarResponse.class).returnResult().getResponseBody();
         MechanicResponse mechanic = client.post().uri("/api/mechanics")

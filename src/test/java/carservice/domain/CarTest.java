@@ -18,6 +18,25 @@ class CarTest {
     }
 
     @Test
+    void shouldRejectBMWX5ProducedBeforeItsFirstProductionYear() {
+        Client client = new Client("Ivan", "0991112233");
+
+        DomainException exception = assertThrows(DomainException.class,
+                () -> new Car("AA0000AA", "BMW", "X5", 1922, client));
+
+        assertTrue(exception.getMessage().contains("BMW X5"));
+    }
+
+    @Test
+    void shouldKeepProductionYearOnCar() {
+        Client client = new Client("Ivan", "0991112233");
+
+        Car car = new Car("AA0000AA", "BMW", "X5", 2020, client);
+
+        assertEquals(2020, car.getProductionYear());
+    }
+
+    @Test
     void shouldThrowExceptionWhenLicensePlateIsBlank() {
         Client client = new Client("Ivan", "0991112233");
         assertThrows(DomainException.class, () -> new Car("", "Toyota", "Camry", client));

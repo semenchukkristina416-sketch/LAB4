@@ -111,7 +111,11 @@ public class RepairOrder {
     public void assignMechanic(Mechanic mechanic) {
         if (mechanic == null)
             throw new DomainException("Mechanic cannot be null");
+        if (this.mechanic != null && this.mechanic != mechanic) {
+            this.mechanic.unregisterOrder(this);
+        }
         this.mechanic = mechanic;
+        mechanic.registerOrder(this);
     }
 
     public void assignServicePost(ServicePost post) {

@@ -20,7 +20,7 @@ public class CarController {
     @PostMapping
     ResponseEntity<CarResponse> create(@Valid @RequestBody CarCreateRequest request) {
         CarResponse response = mapper.toResponse(service.create(request.licensePlate(), request.brand(),
-                request.model(), request.ownerId()));
+                request.model(), request.productionYear(), request.ownerId()));
         return ResponseEntity.created(URI.create("/api/cars/" + response.id())).body(response);
     }
 

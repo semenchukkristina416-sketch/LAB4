@@ -1,6 +1,8 @@
 package carservice.domain;
 
 import carservice.domain.enumeration.MechanicSpecialization;
+import carservice.domain.enumeration.OrderPriority;
+import java.time.LocalDateTime;
 import carservice.exception.DomainException;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -63,5 +65,25 @@ class MechanicTest {
                 break;
             }
         }
+    }
+
+    @Test
+    void busyFlagIsComputedFromAssignedOrderStatus() {
+        Client client = new Client("Ivan", "0991112233");
+        Car car = new Car("AA0001AA", "Toyota", "Camry", client);
+        Mechanic mechanic = new Mechanic("Oleh", MechanicSpecialization.GENERAL);
+        RepairOrder order = new RepairOrder(car, OrderPriority.NORMAL, LocalDateTime.now(), 60);
+        order.addJob(new Job("Inspection", "General inspection", java.math.BigDecimal.ONE,
+                java.math.BigDecimal.ONE, MechanicSpecialization.GENERAL));
+        order.approve();
+        order.assignMechanic(mechanic);
+
+        assertFalse(mechanic.isBusy());
+
+        order.startExecution();
+        assertTrue(mechanic.isBusy());
+
+        order.completeOrder();
+        assertFalse(mechanic.isBusy());
     }
 }

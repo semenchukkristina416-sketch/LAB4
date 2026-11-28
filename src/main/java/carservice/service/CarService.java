@@ -19,11 +19,17 @@ public class CarService {
 
     @Transactional
     public Car create(final String licensePlate, final String brand, final String model,
-                      final Long ownerId) {
+                      final int productionYear, final Long ownerId) {
         if (repository.existsByLicensePlateIgnoreCase(licensePlate)) {
             throw new ConflictException("Car with license plate " + licensePlate + " already exists");
         }
-        return save(new Car(licensePlate, brand, model, clientService.getById(ownerId)));
+        return save(new Car(licensePlate, brand, model, productionYear, clientService.getById(ownerId)));
+    }
+
+    @Transactional
+    public Car create(final String licensePlate, final String brand, final String model,
+                      final Long ownerId) {
+        return create(licensePlate, brand, model, 2020, ownerId);
     }
 
     @Transactional
